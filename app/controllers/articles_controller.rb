@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
 
   def update
 	  if @article.update(article_params)
-	    redirect_to articles_path
+	    redirect_to admin_articles_path
 	  else
 	    render 'edit'
 	  end

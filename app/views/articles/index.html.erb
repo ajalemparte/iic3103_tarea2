@@ -1,19 +1,12 @@
-<html><head></head>
-<body>
-
 <h1>News</h1>
 
 <%= link_to 'Log in', admin_articles_path %>
 
 <% @articles.each do |article| %>
     <hr>
-    <div style="backgroud-color:lightgray">
-
     <h1><%= link_to article.title, article_path(article) %></h1>
     <p><font size="5"><%= article.subtitle %></font></p>
   	<p><font size="2"><%= article.body %></font></p>
     <p><font size="1">Posted on: <%= article.created_at.strftime("%B %d, %Y at %H:%M") %></font></p>
-    </div>
+    <p><font size="2"><%= article.comments.length %> comments</font></p>
 <% end %>
-
-</body></html>
