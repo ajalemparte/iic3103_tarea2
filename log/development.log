@@ -4048,3 +4048,110 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 52ms (Views: 44.6ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 12:04:55 -0300
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 290ms (Views: 262.6ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 12:05:00 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (2.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendered articles/index.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 99ms (Views: 57.5ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 12:05:09 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 51ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 12:05:21 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i82VE65nce+QOHG4jB6nkBlr01MojweuxJB0pR63XNYIGej/C1Jv1sqjTlke74yFNAfF6rKe6MHF1ELK6xM49A==", "article"=>{"title"=>"crrccr", "subtitle"=>"crrcrcrcr", "body"=>"crcrcrcr"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "crrccr"], ["subtitle", "crrcrcrcr"], ["body", "crcrcrcr"], ["created_at", "2018-03-19 15:05:21.690954"], ["updated_at", "2018-03-19 15:05:21.690954"]]
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 12.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"articles"}, missing required keys: [:id]):
+  
+app/controllers/articles_controller.rb:21:in `create'
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 12:14:50 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendered articles/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 60ms (Views: 53.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 12:14:53 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 87ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 12:14:58 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cp2NrngDd2DXDzXCoEqsvY+d7JU/WUtVy0BpmTzvhXPxSfBC3TZpWY2UCiMyu4eoovH6LKVIpDrKBF/2yUvhUQ==", "article"=>{"title"=>"sesee", "subtitle"=>"eded", "body"=>"ede"}, "commit"=>"Save Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "sesee"], ["subtitle", "eded"], ["body", "ede"], ["created_at", "2018-03-19 15:14:58.626063"], ["updated_at", "2018-03-19 15:14:58.626063"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 6.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"articles"}, missing required keys: [:id]):
+  
+app/controllers/articles_controller.rb:21:in `create'
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:18:15 -0300
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendered articles/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 294ms (Views: 271.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 12:18:17 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 75ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 12:18:22 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WkS91WWp0MMdyqRhFpxUt55S1goqmjcYJg1Lx1bSylfZkMA5wJzO+kdRm4CEbX+isz7As7CL2HcnSX2oo3audQ==", "article"=>{"title"=>"annana", "subtitle"=>"dsafdsfaf", "body"=>"sadfsadf"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "annana"], ["subtitle", "dsafdsfaf"], ["body", "sadfsadf"], ["created_at", "2018-03-19 15:18:22.311161"], ["updated_at", "2018-03-19 15:18:22.311161"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/articles/9
+Completed 302 Found in 24ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/articles/9" for 127.0.0.1 at 2018-03-19 12:18:22 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mArticle Load (2.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 28.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 12:18:26 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendered articles/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.8ms)
+
+

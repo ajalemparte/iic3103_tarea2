@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
 	before_action :set_article, only: [:show, :edit, :update, :destroy]
 
 	def index
-		@articles = Article.order(created_at: :desc).limit(1)
+		@articles = Article.order(created_at: :desc).limit(10)
 	end
 
 	def show
@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
 		# redirect_to @article	
 
 		if @article.save
-    	redirect_to article_path
+    	redirect_to article_path(@article)
   	else
     	render 'new'
   	end
