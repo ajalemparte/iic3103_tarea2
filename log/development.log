@@ -3873,3 +3873,140 @@ Migrating to CreateArticles (20180318230809)
   [1m[35m (11.1ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7207048699416805680)[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-19 11:13:09 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (18.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 314ms (Views: 276.8ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 11:13:12 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 81ms (Views: 44.0ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 11:16:21 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 68ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 11:17:00 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bXJCjbFcJ6R/nuCpFYSFhlPruEVucR+gmVRrmB8Yu+Lupj9hFGk5nSUF30iHda6Tfoeu/PRg8M+YEF336rzfwA==", "article"=>{"title"=>"Noticia 1", "subtitle"=>"BAJADA", "body"=>"PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"}, "commit"=>"Save Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Noticia 1"], ["subtitle", "BAJADA"], ["body", "PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"], ["created_at", "2018-03-19 14:17:00.644585"], ["updated_at", "2018-03-19 14:17:00.644585"]]
+  [1m[35m (11.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 18.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"articles"}, missing required keys: [:id]):
+  
+app/controllers/articles_controller.rb:21:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 11:24:29 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bXJCjbFcJ6R/nuCpFYSFhlPruEVucR+gmVRrmB8Yu+Lupj9hFGk5nSUF30iHda6Tfoeu/PRg8M+YEF336rzfwA==", "article"=>{"title"=>"Noticia 1", "subtitle"=>"BAJADA", "body"=>"PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"}, "commit"=>"Save Article"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (7.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Noticia 1"], ["subtitle", "BAJADA"], ["body", "PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"], ["created_at", "2018-03-19 14:24:29.062823"], ["updated_at", "2018-03-19 14:24:29.062823"]]
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 19.1ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"articles"}, missing required keys: [:id]):
+  
+app/controllers/articles_controller.rb:21:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 11:25:45 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E69qiZWaNAv6USWB1ti2toVOSeXmAkQEZ7DP1cRrbx3dlgkrU3D5VFbL8WHzF+eXDSD55x0pFZqEK12WEbmI/Q==", "article"=>{"title"=>"Noticia 1", "subtitle"=>"BAJADA", "body"=>"PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"}, "commit"=>"Save Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Noticia 1"], ["subtitle", "BAJADA"], ["body", "PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"], ["created_at", "2018-03-19 14:25:45.874815"], ["updated_at", "2018-03-19 14:25:45.874815"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"articles"}, missing required keys: [:id]):
+  
+app/controllers/articles_controller.rb:21:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 11:26:55 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E69qiZWaNAv6USWB1ti2toVOSeXmAkQEZ7DP1cRrbx3dlgkrU3D5VFbL8WHzF+eXDSD55x0pFZqEK12WEbmI/Q==", "article"=>{"title"=>"Noticia 1", "subtitle"=>"BAJADA", "body"=>"PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"}, "commit"=>"Save Article"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Noticia 1"], ["subtitle", "BAJADA"], ["body", "PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"], ["created_at", "2018-03-19 14:26:55.792214"], ["updated_at", "2018-03-19 14:26:55.792214"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"articles"}, missing required keys: [:id]):
+  
+app/controllers/articles_controller.rb:21:in `create'
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 11:27:09 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E69qiZWaNAv6USWB1ti2toVOSeXmAkQEZ7DP1cRrbx3dlgkrU3D5VFbL8WHzF+eXDSD55x0pFZqEK12WEbmI/Q==", "article"=>{"title"=>"Noticia 1", "subtitle"=>"BAJADA", "body"=>"PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"}, "commit"=>"Save Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Noticia 1"], ["subtitle", "BAJADA"], ["body", "PerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerroPerro"], ["created_at", "2018-03-19 14:27:10.050419"], ["updated_at", "2018-03-19 14:27:10.050419"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 33ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2018-03-19 11:27:10 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 268ms (Views: 255.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 11:27:24 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 61ms (Views: 56.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 11:27:25 -0300
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 64ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 11:27:29 -0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4L3k6o5EYNSb5fYifQy4wKOew4vz/a8glUMoB3OKIHZjaZkGK3F+7cF+ycPv/ZPVjvLVMmnsQE+UBx5ohi5EVA==", "article"=>{"title"=>"123", "subtitle"=>"123", "body"=>"123"}, "commit"=>"Save Article"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "123"], ["subtitle", "123"], ["body", "123"], ["created_at", "2018-03-19 14:27:29.632347"], ["updated_at", "2018-03-19 14:27:29.632347"]]
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 11ms (ActiveRecord: 6.5ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-03-19 11:27:29 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 11:27:36 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 50ms (Views: 44.9ms | ActiveRecord: 0.5ms)
+
+
