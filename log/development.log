@@ -4010,3 +4010,41 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 50ms (Views: 44.9ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/articles/6/edit" for 127.0.0.1 at 2018-03-19 11:35:15 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/edit.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 296ms (Views: 266.8ms | ActiveRecord: 5.0ms)
+
+
+Started PATCH "/articles/6" for 127.0.0.1 at 2018-03-19 11:35:20 -0300
+Processing by ArticlesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRAdaI97r8HtDGtX3XBmrnjquCjqFmyq1j1ruYQofD1fKX7KSZFinkGWv7f4vzeP8IQIKhE9PTQ1pvn6Ufqb3Q==", "article"=>{"title"=>"123", "subtitle"=>"1234", "body"=>"123"}, "commit"=>"Update Article", "id"=>"6"}
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE "articles" SET "subtitle" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["subtitle", "1234"], ["updated_at", "2018-03-19 14:35:20.669733"], ["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/articles/6
+Completed 302 Found in 23ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/articles/6" for 127.0.0.1 at 2018-03-19 11:35:20 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 39ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 11:35:23 -0300
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendered articles/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 52ms (Views: 44.6ms | ActiveRecord: 0.7ms)
+
+
