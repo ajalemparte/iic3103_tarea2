@@ -5,6 +5,10 @@ class ArticlesController < ApplicationController
 		@articles = Article.order(created_at: :desc).limit(10)
 	end
 
+	def admin
+		@articles = Article.order(created_at: :desc)
+	end
+
 	def show
 	end
 
@@ -26,7 +30,7 @@ class ArticlesController < ApplicationController
 
 	def destroy
     @article.destroy
-    redirect_to articles_path
+    redirect_to admin_articles_path
   end
 
   def edit
@@ -34,7 +38,7 @@ class ArticlesController < ApplicationController
 
   def update
 	  if @article.update(article_params)
-	    redirect_to @article
+	    redirect_to articles_path
 	  else
 	    render 'edit'
 	  end

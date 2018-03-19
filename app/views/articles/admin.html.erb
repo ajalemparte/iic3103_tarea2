@@ -1,6 +1,6 @@
 <h1>News</h1>
 
-<%= link_to 'Log in', admin_articles_path %>
+<%= link_to 'New article', new_article_path %> - <%= link_to 'Log out', articles_path %>
 
 <% @articles.each do |article| %>
     <hr>
@@ -8,4 +8,5 @@
     <p><font size="5"><%= article.subtitle %></font></p>
     <p><font size="2"><%= article.body %></font></p>
     <p><font size="1">Posted on: <%= article.created_at.strftime("%B %d, %Y at %H:%M") %></font></p>
+    <%= link_to 'Edit', edit_article_path(article) %> - <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: 'Are you sure you want to delete this article?'} %>
 <% end %>

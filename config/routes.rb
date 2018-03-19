@@ -3,9 +3,13 @@ Rails.application.routes.draw do
 
   # get 'landing/index'
 
+  get 'articles/admin' => 'articles#admin', :as => :admin_articles
+
+
   root 'articles#index'
 
-  resources :articles
-
+  resources :articles do
+  	resources :comments
+  end
 
 end
