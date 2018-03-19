@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
 		# redirect_to @article	
 
 		if @article.save
-    	redirect_to article_path(@article)
+    	redirect_to articles_path
   	else
     	render 'new'
   	end
@@ -26,7 +26,7 @@ class ArticlesController < ApplicationController
 
 	def destroy
     @article.destroy
-    redirect_to article_path
+    redirect_to articles_path
   end
 
   def edit
