@@ -3,6 +3,15 @@ class ArticlesController < ApplicationController
 
 	def index
 		@articles = Article.order(created_at: :desc).limit(10)
+		@articles.each do |article|
+      if article.body.length >= 500
+        if end_word = article.body[0..500].rindex(" ")
+        	article.body = article.body[0..(end_word - 1)] + '...'
+        else
+        	article.body = article.body[0..497] + '...'
+        end
+      end 
+    end
 	end
 
 	def admin

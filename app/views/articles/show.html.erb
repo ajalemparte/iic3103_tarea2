@@ -11,6 +11,7 @@
   </p>
 <% end %>
 
+<hr>
 <h2>Add a comment:</h2>
 <%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
   <p>
@@ -24,6 +25,7 @@
   <p>
     <%= form.submit %>
   </p>
+  <hr>
 <% end %>
  
 <%= link_to 'Back', articles_path %>
