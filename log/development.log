@@ -6571,3 +6571,2313 @@ Processing by ArticlesController#create as HTML
 Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:23:45 -0300
+  [1m[35m (39.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (4.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 67ms (Views: 0.6ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:23:57 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 66ms (Views: 0.3ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:24:04 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 00:24:16 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (3.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 00:24:40 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (13.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (2.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (67.3ms)
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:24:45 -0300
+Completed 200 OK in 5499ms (Views: 5460.3ms | ActiveRecord: 24.1ms)
+
+
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 131ms (Views: 99.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:06 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 67ms (Views: 60.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 00:25:15 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 105ms (Views: 94.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/articles/admin" for 127.0.0.1 at 2018-04-03 00:25:20 -0300
+Processing by ArticlesController#admin as HTML
+  Rendering articles/admin.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/admin.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 82ms (Views: 69.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 00:25:22 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (5.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (7.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 106ms (Views: 82.4ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 00:25:34 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 60ms (Views: 53.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 00:25:37 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 65ms (Views: 57.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:39 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 72ms (Views: 62.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:41 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 101ms (Views: 84.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:44 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 75ms (Views: 59.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:45 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 84ms (Views: 71.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:47 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 74ms (Views: 65.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:49 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 91ms (Views: 75.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:51 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 89ms (Views: 76.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:25:54 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 77ms (Views: 64.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:26:08 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 116ms (Views: 86.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:26:27 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  Rendered articles/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 95ms (Views: 82.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:26:35 -0300
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:26:36 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:26:40 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:00 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:01 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:03 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:07 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:08 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:10 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:25 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:26 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:34 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:37 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 8ms (Views: 0.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:46 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 35ms (Views: 12.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:28:56 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 32ms (Views: 2.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:29:00 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 27ms (Views: 1.9ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-03 00:29:09 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC LIMIT $1[0m  [["LIMIT", 10]]
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/create" for 127.0.0.1 at 2018-04-03 00:42:16 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/create"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "title": "Título de la noticia creada",
+    "subtitle": "Subtítulo de la noticia creada",
+    "body": "Cuerpo de la noticia creada",
+}
+Started POST "/create" for 127.0.0.1 at 2018-04-03 00:42:38 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/create"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/create" for 127.0.0.1 at 2018-04-03 00:43:57 -0300
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/create"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/create" for 127.0.0.1 at 2018-04-03 00:44:05 -0300
+  
+ActionController::RoutingError (No route matches [PUT] "/create"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/create" for 127.0.0.1 at 2018-04-03 00:45:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/create"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/create" for 127.0.0.1 at 2018-04-03 00:45:36 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 19ms (ActiveRecord: 6.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=create):
+  
+app/controllers/articles_controller.rb:64:in `set_article'
+Started PUT "/articles/create" for 127.0.0.1 at 2018-04-03 00:45:45 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "id"=>"create", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/articles/create" for 127.0.0.1 at 2018-04-03 00:51:13 -0300
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "id"=>"create", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 9ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/articles/create" for 127.0.0.1 at 2018-04-03 00:53:35 -0300
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (undefined method `skip_before_filter' for ArticlesController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/articles_controller.rb:2:in `<class:ArticlesController>'
+app/controllers/articles_controller.rb:1:in `<top (required)>'
+Started PUT "/articles/create" for 127.0.0.1 at 2018-04-03 00:53:46 -0300
+  
+ActionController::RoutingError (undefined method `skip_before_filter' for ArticlesController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/articles_controller.rb:2:in `<class:ArticlesController>'
+app/controllers/articles_controller.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2018-04-03 10:31:53 -0300
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 35ms (Views: 1.9ms | ActiveRecord: 5.9ms)
+
+
+Started PUT "/articles/create" for 127.0.0.1 at 2018-04-03 10:34:45 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "id"=>"create", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/articles/create" for 127.0.0.1 at 2018-04-03 10:40:34 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "id"=>"create", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 14ms (ActiveRecord: 4.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=create):
+  
+app/controllers/articles_controller.rb:66:in `set_article'
+Started PUT "/articles/create" for 127.0.0.1 at 2018-04-03 10:41:44 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.5ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 13:41:44.761166"], ["updated_at", "2018-04-03 13:41:44.761166"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 28ms (Views: 0.5ms | ActiveRecord: 11.2ms)
+
+
+Started PUT "/articles/1" for 127.0.0.1 at 2018-04-03 10:45:12 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "id"=>"1", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 17ms (ActiveRecord: 5.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:72:in `set_article'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:45:18 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"1", "article"=>{}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (ActiveRecord: 6.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:72:in `set_article'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:45:49 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:72:in `set_article'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:47:04 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:72:in `set_article'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:47:06 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:72:in `set_article'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:47:14 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 23ms (ActiveRecord: 4.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=1):
+  
+app/controllers/articles_controller.rb:24:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:50:04 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `findById' for #<Class:0x007f8557ce0ca0>
+Did you mean?  find_by):
+  
+app/controllers/articles_controller.rb:24:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:51:51 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `findById' for #<Class:0x007f8557ce0ca0>
+Did you mean?  find_by):
+  
+app/controllers/articles_controller.rb:24:in `show'
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:51:58 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 1]]
+Completed 200 OK in 18ms (Views: 1.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:51:58 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2018-04-03 10:52:00 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2018-04-03 10:52:04 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 2]]
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/17" for 127.0.0.1 at 2018-04-03 10:52:06 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 17]]
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 10:52:14 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 23ms (Views: 4.1ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 10:52:18 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/23" for 127.0.0.1 at 2018-04-03 10:52:24 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 23]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/22" for 127.0.0.1 at 2018-04-03 10:53:38 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 22]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/21" for 127.0.0.1 at 2018-04-03 11:01:28 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 21]]
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/20/edit" for 127.0.0.1 at 2018-04-03 11:01:32 -0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=20):
+  
+app/controllers/articles_controller.rb:73:in `set_article'
+Started GET "/articles/20" for 127.0.0.1 at 2018-04-03 11:01:36 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 20]]
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/19" for 127.0.0.1 at 2018-04-03 11:01:39 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 19]]
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/18" for 127.0.0.1 at 2018-04-03 11:01:41 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 18]]
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/17" for 127.0.0.1 at 2018-04-03 11:01:44 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 17]]
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/15" for 127.0.0.1 at 2018-04-03 11:01:47 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 15]]
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/15" for 127.0.0.1 at 2018-04-03 11:01:56 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 15]]
+Completed 200 OK in 25ms (Views: 6.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/articles/15" for 127.0.0.1 at 2018-04-03 11:01:56 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 15]]
+Completed 200 OK in 18ms (Views: 8.7ms | ActiveRecord: 8.5ms)
+
+
+Started DELETE "/articles/15" for 127.0.0.1 at 2018-04-03 11:02:12 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "id"=>"15", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 15]]
+  [1m[35mSQL (29.4ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 61ms (Views: 0.6ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/articles/15" for 127.0.0.1 at 2018-04-03 11:03:02 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 15]]
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2018-04-03 11:03:04 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 14]]
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/articles/14" for 127.0.0.1 at 2018-04-03 11:03:15 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "id"=>"14", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 14]]
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 14]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 44ms (Views: 0.9ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/articles/14" for 127.0.0.1 at 2018-04-03 11:03:19 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 14]]
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/articles/22" for 127.0.0.1 at 2018-04-03 11:15:53 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"22", "article"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 22]]
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/articles/23" for 127.0.0.1 at 2018-04-03 11:15:57 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"23", "article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 23]]
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 11:16:40 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"24", "article"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/articles/24" for 127.0.0.1 at 2018-04-03 11:17:15 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"id"=>"24", "title"=>"Título de una noticia muy larga", "subtitle"=>"Subtítulo de la noticia larga", "body"=>"Mauris tincidunt turpis ut luctus fringilla. Cras venenatis enim dignissim velit sagittis sodales. Sed iaculis arcu quis viverra accumsan. Phasellus leo turpis, posuere eu tempus a, cursus interdum lacus. Praesent vulputate dui et nisi aliquam, a malesuada nisl eleifend. Nam efficitur id lectus id congue. Nullam ac elementum ex, ut aliquet eros. Donec scelerisque neque at vehicula dictum. In faucibus aliquam neque id consequat. Aenean posuere felis ac convallis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam cursus diam felis, vitae condimentum dui commodo nec. Sed tincidunt convallis tristique. Nulla bibendum ex et odio aliquam aliquet. Nunc ipsum est, dictum ut nibh vitae, blandit mattis dolor. Proin at volutpat ante. Maecenas maximus tortor et justo venenatis, ut dictum mi viverra.", "created_at"=>"2015-03-21T00:01:30.900Z", "article"=>{"id"=>"24", "title"=>"Título de una noticia muy larga", "subtitle"=>"Subtítulo de la noticia larga", "body"=>"Mauris tincidunt turpis ut luctus fringilla. Cras venenatis enim dignissim velit sagittis sodales. Sed iaculis arcu quis viverra accumsan. Phasellus leo turpis, posuere eu tempus a, cursus interdum lacus. Praesent vulputate dui et nisi aliquam, a malesuada nisl eleifend. Nam efficitur id lectus id congue. Nullam ac elementum ex, ut aliquet eros. Donec scelerisque neque at vehicula dictum. In faucibus aliquam neque id consequat. Aenean posuere felis ac convallis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam cursus diam felis, vitae condimentum dui commodo nec. Sed tincidunt convallis tristique. Nulla bibendum ex et odio aliquam aliquet. Nunc ipsum est, dictum ut nibh vitae, blandit mattis dolor. Proin at volutpat ante. Maecenas maximus tortor et justo venenatis, ut dictum mi viverra.", "created_at"=>"2015-03-21T00:01:30.900Z"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "subtitle" = $2, "body" = $3, "updated_at" = $4 WHERE "articles"."id" = $5[0m  [["title", "Título de una noticia muy larga"], ["subtitle", "Subtítulo de la noticia larga"], ["body", "Mauris tincidunt turpis ut luctus fringilla. Cras venenatis enim dignissim velit sagittis sodales. Sed iaculis arcu quis viverra accumsan. Phasellus leo turpis, posuere eu tempus a, cursus interdum lacus. Praesent vulputate dui et nisi aliquam, a malesuada nisl eleifend. Nam efficitur id lectus id congue. Nullam ac elementum ex, ut aliquet eros. Donec scelerisque neque at vehicula dictum. In faucibus aliquam neque id consequat. Aenean posuere felis ac convallis commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam cursus diam felis, vitae condimentum dui commodo nec. Sed tincidunt convallis tristique. Nulla bibendum ex et odio aliquam aliquet. Nunc ipsum est, dictum ut nibh vitae, blandit mattis dolor. Proin at volutpat ante. Maecenas maximus tortor et justo venenatis, ut dictum mi viverra."], ["updated_at", "2018-04-03 14:17:15.639695"], ["id", 24]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 11:17:26 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/23" for 127.0.0.1 at 2018-04-03 11:17:42 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 23]]
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 11:17:45 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/articles/24" for 127.0.0.1 at 2018-04-03 11:24:49 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Título de una noticia muy largaaaaaaaaaa", "id"=>"24", "article"=>{"title"=>"Título de una noticia muy largaaaaaaaaaa"}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["title", "Título de una noticia muy largaaaaaaaaaa"], ["updated_at", "2018-04-03 14:24:49.241099"], ["id", 24]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 22ms (Views: 0.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 11:24:57 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-04-03 11:29:19 -0300
+Processing by ArticlesController#index as */*
+  Parameters: {"article"=>{}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/23" for 127.0.0.1 at 2018-04-03 11:32:58 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 23]]
+Completed 200 OK in 19ms (Views: 11.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/22" for 127.0.0.1 at 2018-04-03 11:33:01 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 22]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:33:24 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."created_at" DESC[0m
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/articles/23/comments" for 127.0.0.1 at 2018-04-03 11:33:33 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."created_at" DESC[0m
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 11:33:36 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."created_at" DESC[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:33:40 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" ORDER BY "comments"."created_at" DESC[0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:36:26 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 31ms (ActiveRecord: 6.7ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:37:57 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 14ms (ActiveRecord: 6.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:38:05 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:38:06 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:38:36 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:39:44 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22" for 127.0.0.1 at 2018-04-03 11:39:49 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 22]]
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:39:55 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:42:29 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:43:18 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `FindById' for #<Class:0x007ffb392fab98>
+Did you mean?  findById):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:43:22 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `FindById' for #<Class:0x007ffb392fab98>
+Did you mean?  findById):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:43:27 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `FindById' for #<Class:0x007ffb392fab98>
+Did you mean?  findById):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:43:28 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `FindById' for #<Class:0x007ffb392fab98>
+Did you mean?  findById):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:43:33 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `FindById' for #<Class:0x007ffb392fab98>
+Did you mean?  findById):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:43:39 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" IS NULL LIMIT $1[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.6ms)
+
+
+  
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" IS NULL LIMIT $1[0m  [["LIMIT", 11]]
+NoMethodError (undefined method `comments' for #<ActiveRecord::Relation []>):
+  
+app/controllers/comments_controller.rb:6:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:43:54 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 21ms (ActiveRecord: 4.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:44:13 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" IS NULL LIMIT $1[0m  [["LIMIT", 11]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.5ms)
+
+
+  
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" IS NULL LIMIT $1[0m  [["LIMIT", 11]]
+NoMethodError (undefined method `comments' for #<ActiveRecord::Relation []>):
+  
+app/controllers/comments_controller.rb:6:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:46:00 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.5ms)
+
+
+  
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+NoMethodError (undefined method `comments' for #<Article::ActiveRecord_Relation:0x007fb21b783780>):
+  
+app/controllers/comments_controller.rb:6:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:46:05 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+NoMethodError (undefined method `comments' for #<Article::ActiveRecord_Relation:0x007fb21b31a590>):
+  
+app/controllers/comments_controller.rb:6:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:48:12 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.3ms)
+
+
+  
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+NoMethodError (undefined method `comments' for #<Article::ActiveRecord_Relation:0x007fbf64eb9b98>):
+  
+app/controllers/comments_controller.rb:6:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:48:13 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+NoMethodError (undefined method `comments' for #<Article::ActiveRecord_Relation:0x007fbf64b46bf0>):
+  
+app/controllers/comments_controller.rb:6:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:48:38 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 11]]
+NoMethodError (undefined method `comments' for #<Article::ActiveRecord_Relation:0x007fbf64e581e0>):
+  
+app/controllers/comments_controller.rb:6:in `index'
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:48:46 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+Completed 200 OK in 58ms (Views: 5.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:48:48 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/articles/26/comments" for 127.0.0.1 at 2018-04-03 11:49:00 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=26):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/16/comments" for 127.0.0.1 at 2018-04-03 11:49:08 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 16]]
+Completed 200 OK in 20ms (Views: 11.8ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/articles/23/comments" for 127.0.0.1 at 2018-04-03 11:49:12 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 23]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/22/comments" for 127.0.0.1 at 2018-04-03 11:49:16 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 22]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/26/comments" for 127.0.0.1 at 2018-04-03 11:49:20 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=26):
+  
+app/controllers/comments_controller.rb:5:in `index'
+Started GET "/articles/26/comments" for 127.0.0.1 at 2018-04-03 11:51:44 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 404 Not Found in 24ms (Views: 0.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/articles/26/comments" for 127.0.0.1 at 2018-04-03 11:51:44 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/26/comments" for 127.0.0.1 at 2018-04-03 11:53:08 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/26/comments" for 127.0.0.1 at 2018-04-03 11:53:10 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/25/comments" for 127.0.0.1 at 2018-04-03 11:53:14 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/25/comments" for 127.0.0.1 at 2018-04-03 11:53:19 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/25/comments" for 127.0.0.1 at 2018-04-03 11:53:20 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 11:53:22 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 24]]
+Completed 200 OK in 37ms (Views: 10.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/articles/25/comments" for 127.0.0.1 at 2018-04-03 11:53:25 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/27/comments" for 127.0.0.1 at 2018-04-03 11:53:28 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 11:55:16 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 24]]
+Completed 200 OK in 23ms (Views: 2.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 11:55:19 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/articles/24" for 127.0.0.1 at 2018-04-03 11:56:13 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "articles" SET "subtitle" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["subtitle", "SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"], ["updated_at", "2018-04-03 14:56:13.032538"], ["id", 24]]
+  [1m[35m (14.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 25ms (Views: 1.2ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 11:56:15 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/articles/24" for 127.0.0.1 at 2018-04-03 11:56:30 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "articles" SET "subtitle" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["subtitle", "SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"], ["updated_at", "2018-04-03 14:56:30.241704"], ["id", 24]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 16ms (Views: 0.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 11:56:31 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:01:00 -0300
+  
+ActionController::RoutingError (No route matches [PUT] "/articles/24/comments"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/24" for 127.0.0.1 at 2018-04-03 12:01:11 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 24]]
+Completed 200 OK in 38ms (Views: 14.0ms | ActiveRecord: 6.3ms)
+
+
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:01:21 -0300
+  
+ActionController::RoutingError (No route matches [PUT] "/articles/24/comments"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:01:44 -0300
+  
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:01:54 -0300
+ActionController::RoutingError (No route matches [PUT] "/articles/24/comments"):
+  
+  
+ActionController::RoutingError (No route matches [PUT] "/articles/24/comments"):
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:02:04 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/controllers/comments_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/comments_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:02:33 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/controllers/comments_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/comments_controller.rb:35: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:02:48 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 91ms (Views: 0.9ms | ActiveRecord: 20.6ms)
+
+
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:02:51 -0300
+  
+ActionController::RoutingError (No route matches [PUT] "/articles/24/comments"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:02:55 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 6ms (Views: 1.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:03:03 -0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 60ms (Views: 1.2ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:03:03 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:03:07 -0300
+  
+ActionController::RoutingError (No route matches [PUT] "/articles/24/comments"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:03:38 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 54ms (Views: 1.1ms | ActiveRecord: 6.1ms)
+
+
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:03:41 -0300
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Juan Pérez", "comment"=>"Que buena noticia!", "id"=>"24"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:227:in `handle_unverified_request'
+actionpack (5.1.5) lib/action_controller/metal/request_forgery_protection.rb:222:in `verify_authenticity_token'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:04:08 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Juan Pérez", "comment"=>"Que buena noticia!", "id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 4.6ms)
+
+
+  
+NoMethodError (undefined method `permit' for "Que buena noticia!":String):
+  
+app/controllers/comments_controller.rb:36:in `comment_params'
+app/controllers/comments_controller.rb:21:in `create'
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:09:08 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Juan Pérez", "comment"=>"Que buena noticia!", "id"=>"24"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 10.8ms)
+
+
+  
+NoMethodError (undefined method `permit' for "Que buena noticia!":String):
+  
+app/controllers/comments_controller.rb:36:in `comment_params'
+app/controllers/comments_controller.rb:21:in `create'
+Started PUT "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:16:54 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Juan Pérez", "comment"=>"Que buena noticia!", "id"=>"24"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (18.1ms)[0m  [1m[32mINSERT INTO "comments" ("author", "comment", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Juan Pérez"], ["comment", "Que buena noticia!"], ["article_id", 24], ["created_at", "2018-04-03 15:16:55.375677"], ["updated_at", "2018-04-03 15:16:55.375677"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 100ms (Views: 0.8ms | ActiveRecord: 38.1ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:17:02 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 16ms (Views: 2.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:18:47 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/controllers/comments_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+order(created_at: :desc)select(:author, :comment)
+                              ^):
+  
+app/controllers/comments_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:18:59 -0300
+  
+SyntaxError (/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/controllers/comments_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+order(created_at: :desc)select(:author, :comment)
+                              ^):
+  
+app/controllers/comments_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:19:03 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/controllers/comments_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+order(created_at: :desc)select(:author, :comment)
+                              ^):
+  
+app/controllers/comments_controller.rb:8: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:19:09 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 59ms (Views: 5.6ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/articles/16/comments" for 127.0.0.1 at 2018-04-03 12:19:34 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 16]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/16/comments" for 127.0.0.1 at 2018-04-03 12:23:58 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 16]]
+Completed 200 OK in 66ms (Views: 7.5ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/articles/24/comments" for 127.0.0.1 at 2018-04-03 12:24:13 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 20ms (Views: 1.0ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/articles/16/comments" for 127.0.0.1 at 2018-04-03 12:24:19 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 16]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:24:21 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 4]]
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/16/comments/5" for 127.0.0.1 at 2018-04-03 12:24:24 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"5"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 5]]
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/16/comments/6" for 127.0.0.1 at 2018-04-03 12:24:26 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"6"}
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 6]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/16/comments/5" for 127.0.0.1 at 2018-04-03 12:26:42 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/controllers/comments_controller.rb:20: syntax error, unexpected ':', expecting ')'
+ @article.comments.where(:id :comment_id)
+                              ^
+/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/controllers/comments_controller.rb:56: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/comments_controller.rb:20: syntax error, unexpected ':', expecting ')'
+app/controllers/comments_controller.rb:56: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/articles/16/comments/5" for 127.0.0.1 at 2018-04-03 12:27:40 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"5"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 64ms (Views: 1.4ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:27:43 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:28:13 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:28:14 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:28:21 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 53ms (Views: 1.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:28:22 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/articles/16/comments" for 127.0.0.1 at 2018-04-03 12:28:24 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 16]]
+Completed 200 OK in 18ms (Views: 6.3ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/articles/16/comments/6" for 127.0.0.1 at 2018-04-03 12:28:28 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"6"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/articles/16/comments/3" for 127.0.0.1 at 2018-04-03 12:28:30 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:28:35 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:29:38 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 5ms (Views: 1.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:29:39 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", nil]]
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/articles/16/comments/4" for 127.0.0.1 at 2018-04-03 12:29:43 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"4"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", 4]]
+Completed 200 OK in 58ms (Views: 5.6ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/articles/16/comments/5" for 127.0.0.1 at 2018-04-03 12:29:48 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"5"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", 5]]
+Completed 200 OK in 20ms (Views: 1.2ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/articles/16/comments/6" for 127.0.0.1 at 2018-04-03 12:29:50 -0300
+Processing by CommentsController#show as HTML
+  Parameters: {"id"=>"16", "comment_id"=>"6"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 16], ["id", 6]]
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+

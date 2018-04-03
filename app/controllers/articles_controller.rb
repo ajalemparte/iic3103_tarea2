@@ -1,8 +1,10 @@
 class ArticlesController < ApplicationController
-	before_action :set_article, only: [:show, :edit, :update, :destroy]
+	skip_before_action :verify_authenticity_token
+	before_action :set_article, only: [:edit, :update, :destroy]
 
+	# GET ALL method
 	def index
-		@articles = Article.order(created_at: :desc).limit(10)
+		@articles = Article.order(created_at: :desc)
 		@articles.each do |article|
       if article.body.length >= 500
         if end_word = article.body[0..500].rindex(" ")
@@ -12,46 +14,67 @@ class ArticlesController < ApplicationController
         end
       end 
     end
+  render json: @articles
 	end
 
 	def admin
 		@articles = Article.order(created_at: :desc)
 	end
 
+	# GET 1 method
 	def show
+  if @article = Article.findById(params[:id])
+    render json: @article
+  else
+    response = {:error => "Noticia no encontrada"}
+    render json: response, status: 404
+  end
 	end
 
 	def new
 		@article = Article.new
 	end
 		
+	# PUT method
 	def create
-		@article = Article.new(article_params)
-		# @article.save
-		# redirect_to @article	
-
+		@article = Article.create(article_params)
 		if @article.save
-    	redirect_to articles_path
+    	render json: @article, status: 201
   	else
-    	render 'new'
+    	response = {:error => "Noticia no pudo ser creada"}
+     render json: response, status: 500
   	end
 	end
 
+	# DELETE method
 	def destroy
-    @article.destroy
-    redirect_to admin_articles_path
+    if @article = Article.find_by_id(params[:id])
+    		# response = @article
+      @article.destroy
+      render status: 204
+    else
+      response = {:error => "Noticia no encontrada"}
+      render json: response, status: 404
+    end
   end
 
   def edit
 	end
 
-  def update
-	  if @article.update(article_params)
-	    redirect_to admin_articles_path
-	  else
-	    render 'edit'
-	  end
-  end
+	# PUT method
+ def update
+ 	if @article = Article.find_by_id(params[:id])
+    		if @article.update(article_params)
+				    render json: @article
+				  else
+				    response = {:error => "Noticia no pudo ser actualizada"}
+      		render json: response, status: 500
+				  end
+    else
+      response = {:error => "Noticia no encontrada"}
+      render json: response, status: 404
+    end  
+ end
 
   private 
 		def article_params
