@@ -1,20 +1,18 @@
 Rails.application.routes.draw do
 
- 	root 'articles#index'
-  # get 'articles/admin' => 'articles#admin', :as => :admin_articles
-  get 'articles' => 'articles#index'
-  put 'articles' => 'articles#create'
-  get 'articles/:id' => 'articles#show'
-  delete 'articles/:id' => 'articles#destroy'
-		put 'articles/:id' => 'articles#update'  
-		patch 'articles/:id' => 'articles#update'
+  get 'news' => 'articles#index'
+  post 'news' => 'articles#create'
+  get 'news/:id' => 'articles#show'
+  delete 'news/:id' => 'articles#destroy'
+		put 'news/:id' => 'articles#update'  
+		patch 'news/:id' => 'articles#update'
 
-		get 'articles/:id/comments' => 'comments#index'
-  put 'articles/:id/comments' => 'comments#create'
-  get 'articles/:id/comments/:comment_id' => 'comments#show'
-  delete 'articles/:id/comments/:comment_id' => 'comments#destroy'
-		put 'articles/:id/comments/:comment_id' => 'comments#update'  
-		patch 'articles/:id/comments/:comment_id' => 'comments#update'
+		get 'news/:id/comments' => 'comments#index'
+  post 'news/:id/comments' => 'comments#create'
+  get 'news/:id/comments/:comment_id' => 'comments#show'
+  delete 'news/:id/comments/:comment_id' => 'comments#destroy'
+		put 'news/:id/comments/:comment_id' => 'comments#update'  
+		patch 'news/:id/comments/:comment_id' => 'comments#update'
 
   resources :articles do
   	resources :comments

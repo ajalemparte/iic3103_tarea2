@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
 	skip_before_action :verify_authenticity_token
+	before_action :set_header
 
 	
 	# GET ALL method
@@ -9,7 +10,7 @@ class CommentsController < ApplicationController
 	  	# @comments = @article.comments.order(created_at: :desc)
 	  	render json: @comments
 	  else
-	    response = {:error => "not found"}
+	    response = {:error => "Not found"}
 	    render json: response, status: 404
 	  end
 	end
@@ -20,11 +21,11 @@ class CommentsController < ApplicationController
 			if @comment = @article.comments.where(id: params[:comment_id]).select(:id, :author, :comment)
 	    	render json: @comment
 		  else
-		    response = {:error => "not found"}
+		    response = {:error => "Not found"}
 		    render json: response, status: 404
 		  end
 	  else
-	    response = {:error => "not found"}
+	    response = {:error => "Not found"}
 	    render json: response, status: 404
 	  end
 	end
@@ -34,13 +35,14 @@ class CommentsController < ApplicationController
 		if @article = Article.find_by_id(params[:id])
    		@comment = @article.comments.create(comment_params)
 			if @comment.save
+				response.headers["Location"] = "/news/#{@article[:id]}/comments/#{@comment[:id]}" 
 	    	render json: @comment, status: 201
 	  	else
 	    	response = {:error => "Comentario no pudo ser creado"}
 	  	  render json: response, status: 500
 	  	end
 	  else
-	    response = {:error => "not found"}
+	    response = {:error => "Not found"}
 	    render json: response, status: 404
 	  end
  	end
@@ -48,16 +50,16 @@ class CommentsController < ApplicationController
  	# DELETE method
 	def destroy
 		if @article = Article.find_by_id(params[:id])
-   		if @comment = @article.comments.where(id: params[:comment_id])
-	  		# response = @article
+   		@comment = @article.comments.where(id: params[:comment_id])
+   		if !@comment.empty?
 		    @comment.destroy
-		    render status: 204
+		    render json: @comment, status: 200
 		  else
-		    response = {:error => "not found"}
+		    response = {:error => "Not found"}
 		    render json: response, status: 404
 		  end
 	  else
-	    response = {:error => "not found"}
+	    response = {:error => "Not found"}
 	    render json: response, status: 404
 	  end
 	end
@@ -66,18 +68,18 @@ class CommentsController < ApplicationController
 	def update
 		if @article = Article.find_by_id(params[:id])
    		if @comment = @article.comments.where(id: params[:comment_id])
-	  		if @comment.update(article_params)
+	  		if @comment.update(comment_params)
 				    render json: @comment
 			  else
-			    response = {:error => "Comentario no pudo ser actualizadp"}
+			    response = {:error => "Comentario no pudo ser actualizado"}
     			render json: response, status: 500
 			  end
 		  else
-		    response = {:error => "not found"}
+		    response = {:error => "Not found"}
 		    render json: response, status: 404
 		  end
 	  else
-	    response = {:error => "not found"}
+	    response = {:error => "Not found"}
 	    render json: response, status: 404
 	  end 
  end
@@ -86,4 +88,8 @@ class CommentsController < ApplicationController
     def comment_params
       params.permit(:author, :comment)
     end
+
+  def set_header
+    response.headers["Content-Type"] = "application/json"
+  end
 end

@@ -8881,3 +8881,1368 @@ Processing by CommentsController#show as HTML
 Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/news" for 127.0.0.1 at 2018-04-03 12:50:27 -0300
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 31ms (Views: 2.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 12:52:33 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 12:52:59 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 39ms (Views: 4.2ms | ActiveRecord: 5.7ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 12:53:04 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/news"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/articles" for 127.0.0.1 at 2018-04-03 12:55:21 -0300
+  
+ActionController::RoutingError (No route matches [PUT] "/articles"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started PUT "/news" for 127.0.0.1 at 2018-04-03 12:55:42 -0300
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 15:55:42.898941"], ["updated_at", "2018-04-03 15:55:42.898941"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 16ms (Views: 0.4ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 12:55:56 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/news"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/news" for 127.0.0.1 at 2018-04-03 12:56:37 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 15:56:37.903928"], ["updated_at", "2018-04-03 15:56:37.903928"]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 42ms (Views: 0.6ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/news/%7B%7Bnews_id%7D%7D" for 127.0.0.1 at 2018-04-03 12:56:42 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"{{news_id}}"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 0]]
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/news/8765432" for 127.0.0.1 at 2018-04-03 12:56:46 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"8765432"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 8765432]]
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news/213231" for 127.0.0.1 at 2018-04-03 12:59:19 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"213231"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles"."id", "articles"."title", "articles"."subtitle", "articles"."body" FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 213231]]
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/news/213231" for 127.0.0.1 at 2018-04-03 13:00:23 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"213231"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 213231], ["LIMIT", 1]]
+Completed 404 Not Found in 26ms (ActiveRecord: 5.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=213231):
+  
+app/controllers/articles_controller.rb:27:in `show'
+Started GET "/news/213231" for 127.0.0.1 at 2018-04-03 13:05:00 -0300
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"213231"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 213231], ["LIMIT", 1]]
+Completed 404 Not Found in 28ms (Views: 0.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/news/213231" for 127.0.0.1 at 2018-04-03 13:05:10 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"213231"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 213231], ["LIMIT", 1]]
+Completed 404 Not Found in 14ms (Views: 0.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/news/213231" for 127.0.0.1 at 2018-04-03 13:06:00 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"213231"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 213231], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/news/213231" for 127.0.0.1 at 2018-04-03 13:06:09 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"213231"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 213231], ["LIMIT", 1]]
+Completed 404 Not Found in 21ms (Views: 0.3ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/news/8765432" for 127.0.0.1 at 2018-04-03 13:06:13 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"8765432"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 8765432], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (Views: 0.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/news/%7B%7Bnews_id%7D%7D" for 127.0.0.1 at 2018-04-03 13:06:16 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"{{news_id}}"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 13:06:20 -0300
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 16:06:20.195374"], ["updated_at", "2018-04-03 16:06:20.195374"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 12ms (Views: 0.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 13:06:23 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/news/24" for 127.0.0.1 at 2018-04-03 13:06:35 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/news/24" for 127.0.0.1 at 2018-04-03 13:07:16 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news/24" for 127.0.0.1 at 2018-04-03 13:07:24 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 13:07:26 -0300
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 16:07:26.706678"], ["updated_at", "2018-04-03 16:07:26.706678"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 6ms (Views: 0.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 13:07:29 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/news/8765432" for 127.0.0.1 at 2018-04-03 13:07:31 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"8765432"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 8765432], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news/24/comments" for 127.0.0.1 at 2018-04-03 13:08:14 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"24", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 21ms (Views: 5.6ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/news/24/comments" for 127.0.0.1 at 2018-04-03 13:08:17 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/news/24/comments"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/news/24/comments" for 127.0.0.1 at 2018-04-03 13:10:17 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Autor del comentario", "comment"=>"contenido del comentario", "id"=>"24"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Unpermitted parameter: :id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("author", "comment", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Autor del comentario"], ["comment", "contenido del comentario"], ["article_id", 24], ["created_at", "2018-04-03 16:10:18.246102"], ["updated_at", "2018-04-03 16:10:18.246102"]]
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 75ms (Views: 0.5ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/news/24/comments" for 127.0.0.1 at 2018-04-03 13:10:22 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"24", "comment"=>{}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/news/24/comments" for 127.0.0.1 at 2018-04-03 13:58:51 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 29ms (Views: 7.3ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/news/24/comments" for 127.0.0.1 at 2018-04-03 13:59:29 -0300
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Autor del comentario", "comment"=>"contenido del comentario", "id"=>"24"}
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "comments" ("author", "comment", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Autor del comentario"], ["comment", "contenido del comentario"], ["article_id", 24], ["created_at", "2018-04-03 16:59:29.253849"], ["updated_at", "2018-04-03 16:59:29.253849"]]
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 26ms (Views: 1.4ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/news/24/comments" for 127.0.0.1 at 2018-04-03 13:59:31 -0300
+Processing by CommentsController#index as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:21:12 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 9ms (Views: 5.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:23:35 -0300
+  [1m[35m (7.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (4.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 10.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/article.rb:7:in `truncate'
+app/controllers/articles_controller.rb:10:in `block in index'
+app/controllers/articles_controller.rb:9:in `index'
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:23:46 -0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 5.6ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/models/article.rb:7:in `truncate'
+app/controllers/articles_controller.rb:10:in `block in index'
+app/controllers/articles_controller.rb:9:in `index'
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:23:56 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 29ms (Views: 4.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/news/22" for 127.0.0.1 at 2018-04-03 14:25:20 -0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:26:41 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/news/24" for 127.0.0.1 at 2018-04-03 14:36:24 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Nuevo título de la noticia", "id"=>"24", "article"=>{"title"=>"Nuevo título de la noticia"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["title", "Nuevo título de la noticia"], ["updated_at", "2018-04-03 17:36:24.145029"], ["id", 24]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:44:14 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 14:44:22 -0300
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia 2 creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia 2 creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia 2 creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 17:44:22.008169"], ["updated_at", "2018-04-03 17:44:22.008169"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 6ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/news/24" for 127.0.0.1 at 2018-04-03 14:48:43 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"24"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/news/8765432" for 127.0.0.1 at 2018-04-03 14:48:55 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"8765432"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 8765432], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/news/2" for 127.0.0.1 at 2018-04-03 14:51:08 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/3" for 127.0.0.1 at 2018-04-03 14:51:13 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/15" for 127.0.0.1 at 2018-04-03 14:51:15 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/16" for 127.0.0.1 at 2018-04-03 14:51:17 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/17" for 127.0.0.1 at 2018-04-03 14:51:20 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news/18" for 127.0.0.1 at 2018-04-03 14:51:26 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+Completed 404 Not Found in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news/19" for 127.0.0.1 at 2018-04-03 14:51:29 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/20" for 127.0.0.1 at 2018-04-03 14:51:31 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/21" for 127.0.0.1 at 2018-04-03 14:51:33 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news/22" for 127.0.0.1 at 2018-04-03 14:51:35 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/2243242" for 127.0.0.1 at 2018-04-03 14:51:50 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"2243242"}
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 2243242], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2018-04-03 14:52:13 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"11", "article"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/11" for 127.0.0.1 at 2018-04-03 14:52:19 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"11", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 11]]
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 11]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 9.3ms)
+
+
+  
+ActionView::MissingTemplate (Missing template articles/destroy, application/destroy with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/views"
+):
+  
+app/controllers/articles_controller.rb:57:in `destroy'
+Started DELETE "/news/11" for 127.0.0.1 at 2018-04-03 14:52:55 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"11", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Article with 'id'=11):
+  
+app/controllers/articles_controller.rb:88:in `set_article'
+Started DELETE "/news/11" for 127.0.0.1 at 2018-04-03 14:53:40 -0300
+  [1m[35m (7.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"11", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 2.2ms)
+
+
+  
+NameError (undefined local variable or method `options' for #<ArticlesController:0x007fb0d49887a8>
+Did you mean?  url_options):
+  
+app/controllers/articles_controller.rb:93:in `set_header'
+Started DELETE "/news/11" for 127.0.0.1 at 2018-04-03 14:54:27 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"11", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+Completed 404 Not Found in 13ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:54:51 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 38ms (Views: 7.3ms | ActiveRecord: 9.7ms)
+
+
+Started DELETE "/news/10" for 127.0.0.1 at 2018-04-03 14:54:57 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"10", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 10]]
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 10]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 10.6ms)
+
+
+  
+ActionView::MissingTemplate (Missing template articles/destroy, application/destroy with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :vcf, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/alvaroalemparte/Dropbox/11vo Semestre/Taller de Integración/Tareas/t2/app/views"
+):
+  
+app/controllers/articles_controller.rb:57:in `destroy'
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:55:57 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 25ms (Views: 2.1ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/news/29" for 127.0.0.1 at 2018-04-03 14:56:09 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"29", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 29]]
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 29]]
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 59ms (Views: 0.8ms | ActiveRecord: 21.5ms)
+
+
+Started DELETE "/news/29" for 127.0.0.1 at 2018-04-03 14:56:21 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"29", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:56:30 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/news/28" for 127.0.0.1 at 2018-04-03 14:56:37 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"28", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 28]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 28]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 13ms (Views: 0.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:57:39 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 32ms (Views: 2.1ms | ActiveRecord: 5.9ms)
+
+
+Started DELETE "/news/27" for 127.0.0.1 at 2018-04-03 14:57:45 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"27", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 27]]
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 27]]
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 52ms (Views: 0.5ms | ActiveRecord: 16.3ms)
+
+
+Started DELETE "/news/26" for 127.0.0.1 at 2018-04-03 14:59:14 -0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"26", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 26]]
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 26]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 38ms (Views: 0.5ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 14:59:17 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 15ms (Views: 1.6ms | ActiveRecord: 5.9ms)
+
+
+Started DELETE "/news/12" for 127.0.0.1 at 2018-04-03 14:59:27 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"12", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 12]]
+  [1m[35mSQL (2.3ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 12]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 14ms (Views: 0.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:03:52 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/news/25" for 127.0.0.1 at 2018-04-03 15:03:57 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"25", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 25]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 204 No Content in 5ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/news/25" for 127.0.0.1 at 2018-04-03 15:04:06 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"25", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 11ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:04:11 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 30ms (Views: 1.1ms | ActiveRecord: 12.7ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:04:15 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:04:18 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 8ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:04:21 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:04:53 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 24ms (Views: 0.2ms | ActiveRecord: 5.2ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:04:54 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 18ms (Views: 0.2ms | ActiveRecord: 7.6ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:04:55 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:05:26 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 21ms (Views: 0.3ms | ActiveRecord: 4.8ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:05:31 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 16ms (Views: 0.3ms | ActiveRecord: 7.6ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:10:41 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 22ms (Views: 1.1ms | ActiveRecord: 4.6ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:10:59 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 15ms (Views: 0.5ms | ActiveRecord: 7.8ms)
+
+
+Started DELETE "/news/25" for 127.0.0.1 at 2018-04-03 15:11:45 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"25", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:11:47 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 6ms (Views: 1.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/news/25" for 127.0.0.1 at 2018-04-03 15:11:49 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"25", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/news/40" for 127.0.0.1 at 2018-04-03 15:11:51 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"40", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:11:53 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 204 No Content in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:14:02 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:14:09 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 18ms (Views: 4.9ms | ActiveRecord: 6.0ms)
+
+
+Started DELETE "/news/24" for 127.0.0.1 at 2018-04-03 15:15:36 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"24", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 4.6ms)
+
+
+Started DELETE "/news/13" for 127.0.0.1 at 2018-04-03 15:15:47 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"13", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 6.8ms)
+
+
+Started DELETE "/news/13" for 127.0.0.1 at 2018-04-03 15:16:03 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#destroy as */*
+  Parameters: {"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO", "id"=>"13", "article"=>{"subtitle"=>"SUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULOSUBTITULO"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1[0m  [["article_id", 13]]
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 13]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 49ms (Views: 0.7ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:16:08 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (1.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:17:00 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 15:17:07 -0300
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 18:17:07.321265"], ["updated_at", "2018-04-03 18:17:07.321265"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 9ms (Views: 0.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/news/30" for 127.0.0.1 at 2018-04-03 15:18:37 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"30"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/news/30" for 127.0.0.1 at 2018-04-03 15:18:42 -0300
+Processing by ArticlesController#update as */*
+  Parameters: {"title"=>"Nuevo título de la noticia", "id"=>"30", "article"=>{"title"=>"Nuevo título de la noticia"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mCACHE Article Load (0.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "articles" SET "title" = $1, "updated_at" = $2 WHERE "articles"."id" = $3[0m  [["title", "Nuevo título de la noticia"], ["updated_at", "2018-04-03 18:18:42.481630"], ["id", 30]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/news/30" for 127.0.0.1 at 2018-04-03 15:18:48 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"30"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/30/comments" for 127.0.0.1 at 2018-04-03 15:23:12 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"30", "comment"=>{}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 30]]
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/news/30/comments" for 127.0.0.1 at 2018-04-03 15:23:25 -0300
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Autor del comentario", "comment"=>"contenido del comentario", "id"=>"30"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("author", "comment", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Autor del comentario"], ["comment", "contenido del comentario"], ["article_id", 30], ["created_at", "2018-04-03 18:23:25.481895"], ["updated_at", "2018-04-03 18:23:25.481895"]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 33ms (Views: 0.4ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/news/30/comments" for 127.0.0.1 at 2018-04-03 15:23:27 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"30", "comment"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 30]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/news/30/comments" for 127.0.0.1 at 2018-04-03 15:24:17 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"30"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 30]]
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/news/30/comments" for 127.0.0.1 at 2018-04-03 15:25:31 -0300
+  
+ActionController::RoutingError (No route matches [PUT] "/news/30/comments"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/news/30/comments" for 127.0.0.1 at 2018-04-03 15:29:51 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"30", "comment"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 30]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/news/30/comments/9" for 127.0.0.1 at 2018-04-03 15:29:57 -0300
+Processing by CommentsController#update as */*
+  Parameters: {"id"=>"30", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"9"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2 LIMIT $3[0m  [["article_id", 30], ["id", 9], ["LIMIT", 11]]
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2 LIMIT $3[0m  [["article_id", 30], ["id", 9], ["LIMIT", 11]]
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.3ms)
+
+
+  
+  [1m[36mCACHE Comment Load (0.0ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2 LIMIT $3[0m  [["article_id", 30], ["id", 9], ["LIMIT", 11]]
+NameError (undefined local variable or method `article_params' for #<CommentsController:0x007f94c6e65778>
+Did you mean?  article_path):
+  
+app/controllers/comments_controller.rb:69:in `update'
+Started PUT "/news/30/comments/9" for 127.0.0.1 at 2018-04-03 15:30:58 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#update as */*
+  Parameters: {"id"=>"30", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"9"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :comment_id
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 30], ["id", 9]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "comments" SET "author" = $1, "comment" = $2, "updated_at" = $3 WHERE "comments"."id" = $4[0m  [["author", "Autor 3 del comentario"], ["comment", "contenido 3 del comentario"], ["updated_at", "2018-04-03 18:30:58.934523"], ["id", 9]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 69ms (Views: 0.8ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/news/30/comments/10" for 127.0.0.1 at 2018-04-03 15:32:22 -0300
+Processing by CommentsController#show as */*
+  Parameters: {"id"=>"30", "comment_id"=>"10", "comment"=>{}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 30], ["id", 10]]
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/news/30/comments/" for 127.0.0.1 at 2018-04-03 15:32:33 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"30", "comment"=>{}}
+  [1m[36mArticle Load (1.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 30]]
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/news/12/comments/9" for 127.0.0.1 at 2018-04-03 15:32:45 -0300
+Processing by CommentsController#show as */*
+  Parameters: {"id"=>"12", "comment_id"=>"9", "comment"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news/10/comments/9" for 127.0.0.1 at 2018-04-03 15:32:53 -0300
+Processing by CommentsController#show as */*
+  Parameters: {"id"=>"10", "comment_id"=>"9", "comment"=>{}}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/news/24/comments/9" for 127.0.0.1 at 2018-04-03 15:32:58 -0300
+Processing by CommentsController#show as */*
+  Parameters: {"id"=>"24", "comment_id"=>"9", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 24], ["id", 9]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/news/24/comments" for 127.0.0.1 at 2018-04-03 15:33:07 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"24", "comment"=>{}}
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/news/24/comments/8" for 127.0.0.1 at 2018-04-03 15:33:10 -0300
+Processing by CommentsController#show as */*
+  Parameters: {"id"=>"24", "comment_id"=>"8", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 24], ["id", 8]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/news/24/comments" for 127.0.0.1 at 2018-04-03 15:33:37 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"24", "comment"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 4ms (Views: 1.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/news/25/comments" for 127.0.0.1 at 2018-04-03 15:33:40 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"25", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/news/24/comments" for 127.0.0.1 at 2018-04-03 15:33:47 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"24", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 24]]
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/news/16comments" for 127.0.0.1 at 2018-04-03 15:33:51 -0300
+Processing by ArticlesController#show as */*
+  Parameters: {"id"=>"16comments", "article"=>{}}
+  [1m[36mArticle Load (0.9ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/news/16/comments" for 127.0.0.1 at 2018-04-03 15:33:56 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"16", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 16]]
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/news/13/comments" for 127.0.0.1 at 2018-04-03 15:34:02 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"13", "comment"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:34:05 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 15:34:13 -0300
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 18:34:13.418831"], ["updated_at", "2018-04-03 18:34:13.418831"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 8ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/news/31/comments" for 127.0.0.1 at 2018-04-03 15:34:20 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"31", "comment"=>{}}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 31]]
+Completed 200 OK in 6ms (Views: 1.6ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 15:43:23 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 18:43:24.382451"], ["updated_at", "2018-04-03 18:43:24.382451"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 6.4ms)
+
+
+  
+TypeError (no implicit conversion of Integer into String):
+  
+app/controllers/articles_controller.rb:38:in `+'
+app/controllers/articles_controller.rb:38:in `create'
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:44:57 -0300
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (0.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 37ms (Views: 4.2ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/news" for 127.0.0.1 at 2018-04-03 15:45:02 -0300
+Processing by ArticlesController#create as */*
+  Parameters: {"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada", "article"=>{"title"=>"Título de la noticia creada", "subtitle"=>"Subtítulo de la noticia creada", "body"=>"Cuerpo de la noticia creada"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "articles" ("title", "subtitle", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Título de la noticia creada"], ["subtitle", "Subtítulo de la noticia creada"], ["body", "Cuerpo de la noticia creada"], ["created_at", "2018-04-03 18:45:02.637337"], ["updated_at", "2018-04-03 18:45:02.637337"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 19ms (Views: 0.4ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/news/33/comments/" for 127.0.0.1 at 2018-04-03 15:46:24 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"33", "comment"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 33]]
+Completed 200 OK in 49ms (Views: 1.5ms | ActiveRecord: 7.4ms)
+
+
+Started POST "/news/33/comments" for 127.0.0.1 at 2018-04-03 15:46:30 -0300
+Processing by CommentsController#create as */*
+  Parameters: {"author"=>"Autor del comentario", "comment"=>"contenido del comentario", "id"=>"33"}
+  [1m[36mArticle Load (0.6ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+Unpermitted parameter: :id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("author", "comment", "article_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author", "Autor del comentario"], ["comment", "contenido del comentario"], ["article_id", 33], ["created_at", "2018-04-03 18:46:30.323404"], ["updated_at", "2018-04-03 18:46:30.323404"]]
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Completed 201 Created in 38ms (Views: 0.6ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/news" for 127.0.0.1 at 2018-04-03 15:51:18 -0300
+Processing by ArticlesController#index as */*
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles" ORDER BY "articles"."created_at" DESC[0m
+Completed 200 OK in 6ms (Views: 1.7ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/news/34/comments/1" for 127.0.0.1 at 2018-04-03 15:51:42 -0300
+Processing by CommentsController#destroy as */*
+  Parameters: {"id"=>"34", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"1"}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/news/35/comments/1" for 127.0.0.1 at 2018-04-03 15:52:16 -0300
+Processing by CommentsController#destroy as */*
+  Parameters: {"id"=>"35", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/news/32/comments/1" for 127.0.0.1 at 2018-04-03 15:52:20 -0300
+Processing by CommentsController#destroy as */*
+  Parameters: {"id"=>"32", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"1"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/comments_controller.rb:54:in `destroy'
+Started GET "/news/33/comments/" for 127.0.0.1 at 2018-04-03 15:52:50 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"33", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 33]]
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/news/31/comments/" for 127.0.0.1 at 2018-04-03 15:53:03 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"31", "comment"=>{}}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 31]]
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/news/31/comments/1" for 127.0.0.1 at 2018-04-03 15:53:13 -0300
+Processing by CommentsController#destroy as */*
+  Parameters: {"id"=>"31", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"1"}
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/comments_controller.rb:54:in `destroy'
+Started GET "/news/33/comments/" for 127.0.0.1 at 2018-04-03 15:53:36 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"33", "comment"=>{}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 33]]
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/news/33/comments/11" for 127.0.0.1 at 2018-04-03 15:53:45 -0300
+Processing by CommentsController#destroy as */*
+  Parameters: {"id"=>"33", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"11"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/comments_controller.rb:54:in `destroy'
+Started PUT "/news/33/comments/11" for 127.0.0.1 at 2018-04-03 15:58:59 -0300
+Processing by CommentsController#update as */*
+  Parameters: {"id"=>"33", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"11"}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :comment_id
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 33], ["id", 11]]
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/news/33/comments/" for 127.0.0.1 at 2018-04-03 15:59:09 -0300
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"33", "comment"=>{}}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 33]]
+Completed 200 OK in 13ms (Views: 1.3ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/news/33/comments/11" for 127.0.0.1 at 2018-04-03 15:59:13 -0300
+Processing by CommentsController#update as */*
+  Parameters: {"id"=>"33", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"11"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :comment_id
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 33], ["id", 11]]
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/news/33/comments/" for 127.0.0.1 at 2018-04-03 16:04:25 -0300
+  [1m[35m (7.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CommentsController#index as */*
+  Parameters: {"id"=>"33", "comment"=>{}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments"."id", "comments"."author", "comments"."comment" FROM "comments" WHERE "comments"."article_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["article_id", 33]]
+Completed 200 OK in 55ms (Views: 6.1ms | ActiveRecord: 8.9ms)
+
+
+Started PUT "/news/33/comments/11" for 127.0.0.1 at 2018-04-03 16:04:31 -0300
+Processing by CommentsController#update as */*
+  Parameters: {"id"=>"33", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"11"}
+  [1m[36mArticle Load (0.7ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+Unpermitted parameters: :id, :created_at, :comment_id
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2[0m  [["article_id", 33], ["id", 11]]
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 13.4ms)
+
+
+Started DELETE "/news/33/comments/11" for 127.0.0.1 at 2018-04-03 16:04:43 -0300
+Processing by CommentsController#destroy as */*
+  Parameters: {"id"=>"33", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "comment_id"=>"11"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mComment Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."article_id" = $1 AND "comments"."id" = $2 LIMIT $3[0m  [["article_id", 33], ["id", 11], ["LIMIT", 1]]
+Completed 404 Not Found in 9ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/news/34" for 127.0.0.1 at 2018-04-03 16:05:13 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"id"=>"34", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "article"=>{"id"=>"34", "created_at"=>"2017-03-22T12:40:51.620Z"}}
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/news/35" for 127.0.0.1 at 2018-04-03 16:05:17 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"id"=>"35", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "article"=>{"id"=>"35", "created_at"=>"2017-03-22T12:40:51.620Z"}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/news/354" for 127.0.0.1 at 2018-04-03 16:05:21 -0300
+Processing by ArticlesController#destroy as */*
+  Parameters: {"id"=>"354", "author"=>"Autor 3 del comentario", "comment"=>"contenido 3 del comentario", "created_at"=>"2017-03-22T12:40:51.620Z", "article"=>{"id"=>"354", "created_at"=>"2017-03-22T12:40:51.620Z"}}
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 354], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+

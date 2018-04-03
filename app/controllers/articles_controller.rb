@@ -1,18 +1,13 @@
 class ArticlesController < ApplicationController
 	skip_before_action :verify_authenticity_token
-	before_action :set_article, only: [:edit, :update, :destroy]
+	before_action :set_article, only: [:edit, :update]
+	before_action :set_header
 
 	# GET ALL method
 	def index
 		@articles = Article.order(created_at: :desc)
 		@articles.each do |article|
-      if article.body.length >= 500
-        if end_word = article.body[0..500].rindex(" ")
-        	article.body = article.body[0..(end_word - 1)] + '...'
-        else
-        	article.body = article.body[0..497] + '...'
-        end
-      end 
+			article.truncate(500)
     end
   render json: @articles
 	end
@@ -23,12 +18,13 @@ class ArticlesController < ApplicationController
 
 	# GET 1 method
 	def show
-  if @article = Article.findById(params[:id])
-    render json: @article
-  else
-    response = {:error => "Noticia no encontrada"}
-    render json: response, status: 404
-  end
+		begin
+			@article = Article.find(params[:id])
+			render json: @article
+		rescue ActiveRecord::RecordNotFound  
+			response = {:error => "Not found"}
+    	render json: response, status: 404
+		end
 	end
 
 	def new
@@ -39,6 +35,7 @@ class ArticlesController < ApplicationController
 	def create
 		@article = Article.create(article_params)
 		if @article.save
+			response.headers["Location"] = "/news/#{@article[:id]}" 
     	render json: @article, status: 201
   	else
     	response = {:error => "Noticia no pudo ser creada"}
@@ -49,11 +46,10 @@ class ArticlesController < ApplicationController
 	# DELETE method
 	def destroy
     if @article = Article.find_by_id(params[:id])
-    		# response = @article
       @article.destroy
-      render status: 204
+      render json: @article, status: 200
     else
-      response = {:error => "Noticia no encontrada"}
+      response = {:error => "Not found"}
       render json: response, status: 404
     end
   end
@@ -71,7 +67,7 @@ class ArticlesController < ApplicationController
       		render json: response, status: 500
 				  end
     else
-      response = {:error => "Noticia no encontrada"}
+      response = {:error => "Not found"}
       render json: response, status: 404
     end  
  end
@@ -83,5 +79,9 @@ class ArticlesController < ApplicationController
 
 		def set_article
 	    @article = Article.find(params[:id])
-	  end
+	 end
+
+	 def set_header
+    response.headers["Content-Type"] = "application/json"
+  end
 end
